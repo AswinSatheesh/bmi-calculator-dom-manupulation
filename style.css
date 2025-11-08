@@ -10,10 +10,12 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background: #2A7B9B;
     background: linear-gradient(39deg, rgba(42, 123, 155, 1) 0%, rgba(87, 193, 199, 0.21) 48%, rgba(222, 237, 83, 0.04) 92%);
+    gap: 50px;
 }
 
 .main .box{
@@ -60,4 +62,39 @@
 .result{
     font-size: 18px;
     color: green;
+}
+
+.recent{
+    width: 30%;
+    height: 90vh;
+    border-left: 2px solid #000;
+    padding: 40px;
+    overflow-y: scroll;
+}
+
+.recentBox{
+    background: #51ed4e;
+    border-radius: 5px;
+    padding: 10px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.clearBtn{
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .main{
+        height: auto;
+        padding: 40px 0px;
+        flex-direction: column;
+    }
+
+    .recent{
+        width: 90%;
+        height: 100vh;
+    }
 }
